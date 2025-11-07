@@ -1,76 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Internship Application Form</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Internship / Job Application Form</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="container">
-  <h1>Internship Application Form</h1>
-  <form>
+<div class="form-container">
+  <h1>INTERNSHIP / JOB APPLICATION FORM</h1>
 
-    <!-- ================= SECTION 1: PERSONAL DETAILS ================= -->
-    <h2 class="section-title">1. Personal Details</h2>
+  <!-- ========== A. PERSONAL DETAILS ========== -->
+  <div class="section">
+    <div class="section-header">A. Personal Details</div>
 
-    <div class="row">
-      <div class="col">
-        <label>Full Name:</label>
-        <input type="text" placeholder="Enter your full name" required>
-      </div>
-      <div class="col">
-        <label>Date of Birth:</label>
-        <input type="date" required>
-      </div>
-    </div>
+    <label>Full Name:</label>
+    <input type="text" placeholder="Enter your full name" class="full-width">
 
-    <div class="row">
-      <div class="col">
+    <div class="grid-3">
+      <div><label>Birth Date:</label><input type="date"></div>
+      <div>
         <label>Gender:</label>
-        <div class="inline-options">
-          <label><input type="radio" name="gender" value="Male"> Male</label>
-          <label><input type="radio" name="gender" value="Female"> Female</label>
-          <label><input type="radio" name="gender" value="Other"> Other</label>
-        </div>
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+        <input type="radio" name="gender"> Other
       </div>
-      <div class="col">
-        <label>Marital Status:</label>
-        <div class="inline-options">
-          <label><input type="radio" name="marital" value="Single"> Single</label>
-          <label><input type="radio" name="marital" value="Married"> Married</label>
-        </div>
+      <div><label>Nationality:</label><input type="text" placeholder="Country"></div>
+    </div>
+
+    <div class="grid-2">
+      <div><label>Address:</label><input type="text" placeholder="Street, Area"></div>
+      <div><label>City:</label><input type="text"></div>
+    </div>
+
+    <div class="grid-3">
+      <div><label>State:</label><input type="text"></div>
+      <div><label>Zip Code:</label><input type="text"></div>
+      <div><label>Country:</label><input type="text"></div>
+    </div>
+
+    <div class="grid-2">
+      <div><label>Phone Number:</label><input type="text"></div>
+      <div><label>Alternate Phone:</label><input type="text"></div>
+    </div>
+
+    <div class="grid-2">
+      <div><label>Email Address:</label><input type="email"></div>
+      <div><label>LinkedIn Profile:</label><input type="text"></div>
+    </div>
+
+    <div class="grid-2">
+      <div><label>Languages Known:</label><input type="text" placeholder="English, Hindi, Tamil"></div>
+      <div><label>Are you a fresher?</label>
+        <input type="radio" name="fresher"> Yes
+        <input type="radio" name="fresher"> No
       </div>
     </div>
 
-    <div class="row">
-      <div class="col">
-        <label>Email:</label>
-        <input type="email" placeholder="example@mail.com" required>
+    <div class="grid-2">
+      <div><label>Status:</label>
+        <input type="radio" name="status"> Single
+        <input type="radio" name="status"> Married
+        <input type="radio" name="status"> Others
       </div>
-      <div class="col">
-        <label>Phone:</label>
-        <input type="tel" placeholder="+91 9876543210" required>
-      </div>
+      <div><label>Upload Photo:</label><input type="file" accept="image/*"></div>
     </div>
+  </div>
 
-    <label>Address:</label>
-    <textarea rows="2" placeholder="Enter your permanent address"></textarea>
+  <!-- ========== B. ACADEMIC BACKGROUND ========== -->
+  <div class="section">
+    <div class="section-header">B. Academic Background</div>
 
-    <div class="row">
-      <div class="col">
-        <label>LinkedIn Profile:</label>
-        <input type="url" placeholder="https://linkedin.com/in/yourname">
-      </div>
-      <div class="col">
-        <label>Upload Photo:</label>
-        <input type="file" accept="image/*">
-      </div>
-    </div>
-
-    <!-- ================= SECTION 2: ACADEMIC BACKGROUND ================= -->
-    <h2 class="section-title">2. Academic Background</h2>
     <p>List your educational qualifications below:</p>
 
     <table>
@@ -80,144 +81,102 @@
           <th>Degree</th>
           <th>Major</th>
           <th>Graduation Date</th>
+          <th>Grade / CGPA</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td><input type="text" placeholder="e.g., ABC University"></td>
-          <td><input type="text" placeholder="e.g., B.Tech"></td>
-          <td><input type="text" placeholder="e.g., Computer Science"></td>
-          <td><input type="month"></td>
-        </tr>
-        <tr>
-          <td><input type="text" placeholder="e.g., XYZ College"></td>
-          <td><input type="text" placeholder="e.g., Diploma"></td>
-          <td><input type="text" placeholder="e.g., IT"></td>
-          <td><input type="month"></td>
-        </tr>
+        <tr><td><br></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td><td></td></tr>
       </tbody>
     </table>
 
-    <label>Academic Achievements:</label>
-    <textarea rows="2" placeholder="Mention any awards or honors received"></textarea>
+    <div class="grid-2">
+      <div><label>Certifications/Online Courses::</label><input type="text" placeholder="e.g., Python, Excel, AI"></div>
+      
+    </div>
+  </div>
 
-    <!-- ================= SECTION 3: PROFESSIONAL EXPERIENCE ================= -->
-    <h2 class="section-title">3. Professional Experience</h2>
+  <!-- ========== C. INTERNSHIP / JOB DETAILS ========== -->
+  <div class="section">
+    <div class="section-header">C. Internship / Job Details</div>
 
-    <p>Provide details of internships or part-time jobs (if any):</p>
-
-    <table>
-      <thead>
-        <tr>
-          <th>Organization</th>
-          <th>Position</th>
-          <th>Duration</th>
-          <th>Responsibilities</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><input type="text" placeholder="e.g., TechCorp Pvt. Ltd."></td>
-          <td><input type="text" placeholder="e.g., Intern Developer"></td>
-          <td><input type="text" placeholder="e.g., 3 Months"></td>
-          <td><input type="text" placeholder="e.g., Assisted in website design"></td>
-        </tr>
-        <tr>
-          <td><input type="text" placeholder="e.g., Startup Hub"></td>
-          <td><input type="text" placeholder="e.g., Marketing Assistant"></td>
-          <td><input type="text" placeholder="e.g., 2 Months"></td>
-          <td><input type="text" placeholder="e.g., Social media management"></td>
-        </tr>
-      </tbody>
-    </table>
-
-    <label>Upload Resume:</label>
-    <input type="file" accept=".pdf,.doc,.docx">
-
-    <!-- ================= SECTION 4: SKILLS ================= -->
-    <h2 class="section-title">4. Skills & Abilities</h2>
-
-    <div class="row">
-      <div class="col">
-        <label>Technical Skills:</label>
-        <textarea rows="2" placeholder="e.g., HTML, CSS, JavaScript, Python"></textarea>
-      </div>
-      <div class="col">
-        <label>Soft Skills:</label>
-        <textarea rows="2" placeholder="e.g., Teamwork, Communication, Leadership"></textarea>
-      </div>
+    <div class="grid-2">
+      <div><label>Position Applied For:</label><input type="text"></div>
+      <div><label>Department:</label><input type="text"></div>
     </div>
 
-    <label>Proficiency Level (0–10):</label>
-    <input type="range" min="0" max="10" step="1">
-
-    <div class="row">
-      <div class="col">
-        <label>Portfolio URL:</label>
-        <input type="url" placeholder="https://github.com/username">
+    <div class="grid-2">
+      <div>
+        <label>Internship Type:</label>
+        <input type="checkbox"> Full-time
+        <input type="checkbox"> Part-time
+        <input type="checkbox"> Remote
       </div>
-      <div class="col">
-        <label>Preferred Interface Theme:</label>
-        <input type="color">
-      </div>
-    </div>
-
-    <!-- ================= SECTION 5: AVAILABILITY ================= -->
-    <h2 class="section-title">5. Availability & Preferences</h2>
-
-    <div class="row">
-      <div class="col">
-        <label>Available Start Date:</label>
-        <input type="date">
-      </div>
-      <div class="col">
-        <label>Preferred Mode:</label>
-        <select>
-          <option>Online</option>
-          <option>Offline</option>
-          <option>Hybrid</option>
-        </select>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col">
-        <label>Working Hours (per week):</label>
-        <input type="number" min="5" max="60">
-      </div>
-      <div class="col">
-        <label>Willing to Relocate:</label>
-        <input type="checkbox"> Yes
-      </div>
-    </div>
-
-    <label>Preferred Interview Time:</label>
-    <input type="datetime-local">
-
-    <!-- ================= SECTION 6: DECLARATION ================= -->
-    <h2 class="section-title">6. Declaration</h2>
-    <p>I hereby declare that the above information is true and correct to the best of my knowledge.</p>
-
-    <div class="row">
-      <div class="col">
-        <label>Place:</label>
-        <input type="text">
-      </div>
-      <div class="col">
-        <label>Date:</label>
+      <div>
+        <label>Preferred Start Date:</label>
         <input type="date">
       </div>
     </div>
 
-    <label>Signature Upload:</label>
-    <input type="file" accept="image/*">
-
-    <div class="button-group">
-      <button type="submit">Submit Application</button>
-      <button type="reset">Reset</button>
+    <div class="grid-3">
+      <div><label>Expected Duration:</label><input type="text" placeholder="3 months"></div>
+      <div><label>Preferred Location:</label><input type="text"></div>
+      <div><label>Expected Stipend:</label><input type="text" placeholder="₹ / month"></div>
     </div>
 
-  </form>
+    <div class="grid-2">
+      <div><label>Availability (Hours/Week):</label><input type="text"></div>
+      <div><label>Can you relocate?</label>
+        <input type="radio" name="relocate"> Yes
+        <input type="radio" name="relocate"> No
+      </div>
+    </div>
+
+    <label>Technical Skills:</label>
+    <textarea rows="2" placeholder="List programming or technical skills..."></textarea>
+
+    <label>Soft Skills:</label>
+    <textarea rows="2" placeholder="List communication, teamwork, etc..."></textarea>
+
+    <label>Previous Internships / Experience:</label>
+    <textarea rows="2" placeholder="Company name, duration, responsibilities..."></textarea>
+
+    <div class="grid-2">
+      <div><label>Portfolio / GitHub URL:</label><input type="text"></div>
+      <div><label>Upload Resume (PDF):</label><input type="file" accept=".pdf"></div>
+    </div>
+  </div>
+
+  <!-- ========== D. REFERENCES ========== -->
+  <div class="section">
+    <div class="section-header">D. References</div>
+
+    <div class="grid-3">
+      <div><label>Reference 1 Name:</label><input type="text"></div>
+      <div><label>Contact:</label><input type="text"></div>
+      <div><label>Relation:</label><input type="text"></div>
+    </div>
+
+    <div class="grid-3">
+      <div><label>Reference 2 Name:</label><input type="text"></div>
+      <div><label>Contact:</label><input type="text"></div>
+      <div><label>Relation:</label><input type="text"></div>
+    </div>
+  </div>
+
+  <!-- ========== E. SIGNATURE ========== -->
+  <div class="section">
+    <div class="section-header">E. Declaration & Signature</div>
+
+    <p>I hereby declare that all information given above is true and correct to the best of my knowledge.</p>
+
+    <div class="grid-2">
+      <div><label>Signature:</label><input type="text" class="signature-box"></div>
+      <div><label>Date:</label><input type="date"></div>
+    </div>
+  </div>
+
 </div>
 
 </body>
